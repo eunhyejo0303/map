@@ -56,6 +56,29 @@
             width: 95% !important;
             margin: 0 auto;
         }
+        .kakao_map div h4 {
+            font-size: 25px;
+            word-break: keep-all; /* 여백이 부족할때 단어 단위로 줄바꿈해서 떨어지게 하기 */
+        }
+        .kakao_map div p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .kakao_map div dl {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            display: flex; /* dt dd 부모 한테 적용해야 함 */
+        }
+        .kakao_map div dl dt {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .kakao_map div dl dd {
+            margin-right: 30px;
+        }
+        .kakao_map div dl dd a {
+            color: #fff;
+        }
         @media screen and (max-width:640px) {
             .google_map div dl {
                 flex-wrap: wrap; /* 영역 부족하면 밑으로 떨어지게 하기 */
@@ -64,6 +87,17 @@
                 width: 12%;
             }
             .google_map div dl dd {
+                width: 80%;
+                margin-right: 0;
+            }
+
+            .kakao_map div dl {
+                flex-wrap: wrap; /* 영역 부족하면 밑으로 떨어지게 하기 */
+            }
+            .kakao_map div dl dt {
+                width: 12%;
+            }
+            .kakao_map div dl dd {
                 width: 80%;
                 margin-right: 0;
             }
